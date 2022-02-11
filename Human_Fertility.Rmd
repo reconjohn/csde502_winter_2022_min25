@@ -116,7 +116,7 @@ read_hfd_countries_item <- function(countries, item){
 }
 
 CNTRIES <- hfdcodes %>% 
-  filter(Name %in% c("United States", "Canada", "Austria")) %>% 
+  filter(Name %in% c("United States", "Denmark", "Austria")) %>% 
   pull(ccode)
 
 totbirthsRR_USA_LTU_JPN <- read_hfd_countries_item(countries = CNTRIES, item = "totbirthsRR")
